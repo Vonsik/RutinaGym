@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="rutina">
+    <h1 class="titulo">Rutina de gimnasio</h1>
+    <h2 class="dias">Día Uno:</h2>
+    <ul id="listaDiaUno">
+    <li>Sentadilla barra libre 1x10 - 2x8 - 1x6 </li>
+    <li>Peso muerto rumano 2x10 - 2x8 </li>
+    <li>Remo de espalda barra libre 2x10 - 2x8</li>
+    <li>Domina agarre prono 2x8 - 2x6</li>
+    <li>Vuelos laterales 2x12 - 2x8</li>
+    </ul>
+    <h2 class="dias">Día Dos:</h2>
+    <ul id="listaDiaDos">
+    <li>Pecho plano 1x10 - 2x8 - 2x4</li>
+    <li>PeckDeck 2x12 - 2x8</li>
+    <li>Hip trush 2x10 - 2x8</li>
+    <li>Leg Curl Acostado 2x12 - 2x8</li>
+    <li>Curl de biceps 2x12 - 2x8</li>
+    <li>Fondos en banca 2x12 - 2x8</li>
+    <li>Tiron al pecho 2x12 - 2x8</li>
+    <li>Press Militar 2x12 - 2x8</li>
+    <li>Remo al menton 2x12 - 2x8</li>
+    </ul>
+    <h2 class="dias">Día Tres:</h2>
+    <ul id="listaDiaTres">
+    <li>Press Inclinado 2x10 - 1x8 - 1x4</li>
+    <li>Cruce de poleas 2x12 - 2x8</li>
+    <li>Patada trasera 2x10 - 2x8</li>
+    <li>Maquina de aductores 2x12 - 2x8</li>
+    <li>Dominada agarre supino 2x12 - 2x8 </li>
+    <li>Banco Scot 2x12 - 2x8</li>
+    <li>Extenciones de tricep 2x12 - 2x8</li>
+    <li>Press Frances 2x12 - 2x8</li>
+    <li>Elevaciones frontales 2x12 - 2x8</li>
+    <li>Press militar maquina 2x12 - 2x8</li>
+    <li>Remo bajo maquina 2x12 - 2x8</li>
+    </ul>
+</div>
+<button id="btnFuerza">Fuerza</button> <button id="btnHiperFuerza">Hipertrofia y Fuerza</button> <button id="btnHiper">Hipertrofia</button>
+    <script>
+        let listaDiaUno = document.getElementById('listaDiaUno')
+        let listaDiaDos = document.getElementById('listaDiaDos')
+        let listaDiaTres = document.getElementById('listaDiaTres')
+        let btnFuerza = document.getElementById('btnFuerza')
+        let btnHiperFuerza = document.getElementById('btnHiperFuerza')
+        let btnHiper =  document.getElementById('btnHiper')
+
+        btnFuerza.addEventListener('click',function (){
+            listaDiaUno.innerHTML = ('<li>Sentadilla barra libre 1x8 - 2x6 - 1x4 </li><li>Peso muerto rumano 2x8 - 2x6 </li><li>Remo de espalda barra libre 2x8 - 2x6</li><li>Domina agarre prono 2x6 - 2x4</li><li>Vuelos laterales 2x8 - 2x6</li>')
+            listaDiaDos.innerHTML = (' <li>Pecho plano 1x8 - 2x6 - 2x4</li><li>PeckDeck 2x8 - 2x6</li><li>Hip trush 2x8 - 2x4</li><li>Leg Curl Acostado 2x8 - 2x6</li><li>Curl de biceps 2x8 - 2x6</li><li>Fondos en banca 2x8 - 2x6</li><li>Tiron al pecho 2x8 - 2x6</li><li>Press Militar 2x8 - 2x6</li><li>Remo al menton 2x8 - 2x6</li>')
+            listaDiaTres.innerHTML = ('<li>Press Inclinado 1x8 - 2x6 - 1x4</li><li>Cruce de poleas 2x8 - 2x6</li><li>Patada trasera 2x8 - 2x6</li><li>Maquina de aductores 2x8 - 2x6</li><li>Dominada agarre supino 2x8 - 2x6 </li><li>Banco Scot 2x8 - 2x6</li><li>Extenciones de tricep 2x8 - 2x6</li><li>Press Frances 2x8 - 2x6</li><li>Elevaciones frontales 2x8 - 2x6</li><li>Press militar maquina 2x8 - 2x6</li><li>Remo bajo maquina 2x8 - 2x6</li>')
+        })
+        btnHiper.addEventListener('click',function (){
+            listaDiaUno.innerHTML = ('<li>Sentadilla barra libre 1x12 - 2x10 - 1x8 </li><li>Peso muerto rumano 2x12 - 2x10 </li><li>Remo de espalda barra libre 2x12 - 2x10</li><li>Domina agarre prono 2x12 - 2x8</li><li>Vuelos laterales 2x12 - 2x8</li>')
+            listaDiaDos.innerHTML = (' <li>Pecho plano  2x12 - 2x8</li><li>PeckDeck 2x12 - 2x8</li><li>Hip trush 2x12 - 2x10</li><li>Leg Curl Acostado 2x12 - 2x8</li><li>Curl de biceps 2x12 - 2x10</li><li>Fondos en banca 2x12 - 2x10</li><li>Tiron al pecho 2x12 - 2x10</li><li>Press Militar 2x12 - 2x10</li><li>Remo al menton 2x12 - 2x10</li>')
+            listaDiaTres.innerHTML = ('<li>Press Inclinado  2x12 - 1x10</li><li>Cruce de poleas 2x12 - 2x8</li><li>Patada trasera 2x12 - 2x8</li><li>Maquina de aductores 2x12 - 2x10</li><li>Dominada agarre supino 2x12 - 2x10 </li><li>Banco Scot 2x12 - 2x10</li><li>Extenciones de tricep 2x12 - 2x10</li><li>Press Frances 2x12 - 2x10</li><li>Elevaciones frontales 2x12 - 2x10</li><li>Press militar maquina 2x12 - 2x10</li><li>Remo bajo maquina 2x12 - 2x10</li>')
+        })
+        btnHiperFuerza.addEventListener('click',function (){
+            listaDiaUno.innerHTML = ('<li>Sentadilla barra libre 1x10 - 2x8 - 1x6 </li><li>Peso muerto rumano 2x10 - 2x8 </li><li>Remo de espalda barra libre 2x10 - 2x8</li><li>Domina agarre prono 2x8 - 2x6</li><li>Vuelos laterales 2x12 - 2x8</li>')
+            listaDiaDos.innerHTML = ('<li>Pecho plano 1x10 - 2x8 - 2x4</li><li>PeckDeck 2x12 - 2x8</li><li>Hip trush 2x10 - 2x8</li><li>Leg Curl Acostado 2x12 - 2x8</li><li>Curl de biceps 2x12 - 2x8</li><li>Fondos en banca 2x12 - 2x8</li><li>Tiron al pecho 2x12 - 2x8</li><li>Press Militar 2x12 - 2x8</li><li>Remo al menton 2x12 - 2x8</li>')
+            listaDiaTres.innerHTML = ('<li>Press Inclinado 2x10 - 1x8 - 1x4</li><li>Cruce de poleas 2x12 - 2x8</li><li>Patada trasera 2x10 - 2x8</li><li>Maquina de aductores 2x12 - 2x8</li><li>Dominada agarre supino 2x12 - 2x8 </li><li>Banco Scot 2x12 - 2x8</li><li>Extenciones de tricep 2x12 - 2x8</li><li>Press Frances 2x12 - 2x8</li><li>Elevaciones frontales 2x12 - 2x8</li><li>Press militar maquina 2x12 - 2x8</li><li>Remo bajo maquina 2x12 - 2x8</li>')
+        })
+        
+
+    </script>
+</body>
+</html>
